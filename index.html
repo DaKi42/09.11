@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page</title>
+</head>
+<body>
+    <div id="block">
+        <div id="fst">
+
+        </div>
+        <div id="scn">
+            <form method="get">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name">
+
+                <label>Пол</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" pattern="^(\w{5,}@)(([a-z]|[A-Z]){3,5})(\.[a-z]{2,5})$">
+
+                <label for="country">Страна:</label>
+                <select id="country">
+                    <option value="Istanbul">Istanbul</option>
+                    <option value="London">London</option>
+                </select>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+
+    <hr>
+
+    <form method="get">
+        <div id="secndblock">
+            <h2>Step 1: Your details</h2>
+            <div>
+                <label for="name2">Name:</label>
+                <input type="text" id="name2" name="name" placeholder="First and lastname">
+            </div>
+            <div>
+                <label for="email2">Email:</label>
+                <input type="email" id="email2" name="email" placeholder="example@domain.com" pattern="^(\w{5,}@)(([a-z]|[A-Z]){3,5})(\.[a-z]{2,5})$">
+            </div>
+            <div>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380123456789" pattern="^(\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2})|(\d{2}\d{3}\d{3}\d{2}\d{2})$">
+            </div>
+
+            <h2>Step 2: Delivery address</h2>
+            <div>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" cols="30" placeholder="Address"></textarea>
+            </div>
+            <div>
+                <label for="code">Post code:</label>
+                <input type="text" id="code" name="code" pattern="\d{4}">
+            </div>
+            <div>
+                <label for="country2">Country:</label>
+                <input type="text" id="country2" name="country">
+            </div>
+
+            <h2>Step 3: Card details</h2>
+            <div>
+                <label>Card type:</label>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/800px-Mastercard_2019_logo.svg.png" height="40px" width="50px">
+                <input type="radio" id="mastercard" name="cardt">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Visa_Electron.svg/1200px-Visa_Electron.svg.png" height="40px" width="50px">
+                <input type="radio" id="visa" name="cardt">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png" height="40px" width="50px">
+                <input type="radio" id="amex" name="cardt">
+            </div>
+            <div>
+                <label for="cardn">Card number:</label>
+                <input type="text" id="cardn" name="cardn" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" placeholder="XXXX-XXXX-XXXX-XXXX">
+            </div>
+            <div>
+                <label for="cards">Security code:</label>
+                <input type="text" id="cards" name="cards" pattern="^\d{3}$">
+            </div>
+            <div>
+                <label for="cardname">Card name:</label>
+                <input type="text" id="cardname" name="cardname">
+            </div>
+            <a href="#"><div id="button"><h2>Buy it!</h2></div></a>
+        </div>
+    </form>
+</body>
+</html>
